@@ -1,8 +1,16 @@
 # compare_install
 
-Compares set of modules loaded in two CKAN instances on two different machines.
-Useful to compare deployment- with development environment. Also compares the
-git revison of plugins that are loaded by both apps.
++ Compares versions of running CKAN instances.
++ Compares the sets of plugins loaded by two different CKAN instances.
++ Reports modules that are loaded by both instances but have differing
+  Git revisions.
++ Can deal with CKAN instances on remote servers.
+
+Most useful to compare the deployment- with the development-environment.
+
+## Installation:
+
+`pip install git+https://github.com/eawag-rdm/ck_compare_install.git`
 
 ## Usage:
 
@@ -13,7 +21,7 @@ compare_install -h
 
 ## Arguments:
 
-`<host1>`:   First machine in URL notation, e.g. "https://remote-server.eawag.ch".   
+`<host1>`:   First machine in URL notation, e.g. "https:<span></span>//remote-server.eawag.ch".   
 `<host2>`:   Second machine in URL notation [default: http://localhost:5000]
 
 ## Options:
@@ -44,3 +52,4 @@ compare_install -h
   GITBASE_REMOTE_DEPLOY_SERV=/home/Ckan/ckan/git compare_install \
   https://deploy-serv.mydomain.tld http://localhost:5000
   ```
+
