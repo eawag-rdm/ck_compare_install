@@ -6,8 +6,10 @@ git revison of plugins that are loaded by both apps.
 
 ## Usage:
 
-|compare_install <host1> [<host2>]
-|compare_install -h
+```bash
+compare_install <host1> [<host2>]
+compare_install -h
+```
 
 ## Arguments:
 
@@ -38,5 +40,7 @@ git revison of plugins that are loaded by both apps.
   non-alphanumerical characters have been replaced with an underscore ("_").
 
   Example:
-  |GITBASE_REMOTE_DEPLOY_SERV=/home/Ckan/ckan/git compare_install \
-  |https://deploy-serv.mydomain.tld http://localhost:5000
+  ```bash
+  GITBASE_REMOTE_DEPLOY_SERV=/home/Ckan/ckan/git compare_install \
+  https://deploy-serv.mydomain.tld http://localhost:5000
+  ```
