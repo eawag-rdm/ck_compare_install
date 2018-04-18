@@ -6,12 +6,14 @@ git revison of plugins that are loaded by both apps.
 
 ## Usage:
 
-|compare_install <host1> [<host2>]
-|compare_install -h
+```
+compare_install <host1> [<host2>]
+compare_install -h
+```
 
 ## Arguments:
 
-`<host1>`:   First machine in URL notation, e.g. "https://remote-server.eawag.ch".
+`<host1>`:   First machine in URL notation, e.g. "https://remote-server.eawag.ch".\
 `<host2>`:   Second machine in URL notation [default: http://localhost:5000]
 
 ## Options:
@@ -31,12 +33,14 @@ git revison of plugins that are loaded by both apps.
   For remote machines the default is given by the constant
   `GITBASE_REMOTE` (`/home/ckan/git`).
 
-  To temporarily set `GITBASE_REMOTE` or use different `GITBASE_REMOTE for
+  To temporarily set `GITBASE_REMOTE` or use different `GITBASE_REMOTE` for
   `<host1>` and `<host2>`, set environment variable(s)
-  ^GITBASE_REMOTE_<normalized_hostname>`. `<normalized_hostname>` is the hostname
+  `GITBASE_REMOTE_<normalized_hostname>`. `<normalized_hostname>` is the hostname
   this path refers to, where all characters are uppercase and all
   non-alphanumerical characters have been replaced with an underscore ("_").
 
-  Example:
-  |GITBASE_REMOTE_DEPLOY_SERV=/home/Ckan/ckan/git compare_install \
-  |https://deploy-serv.mydomain.tld http://localhost:5000
+  **Example:**
+  ```bash
+  GITBASE_REMOTE_DEPLOY_SERV=/home/Ckan/ckan/git compare_install \
+  https://deploy-serv.mydomain.tld http://localhost:5000
+  ```
