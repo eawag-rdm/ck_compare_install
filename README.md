@@ -13,7 +13,7 @@ compare_install -h
 
 ## Arguments:
 
-`<host1>`:   First machine in URL notation, e.g. "https://remote-server.eawag.ch".\
+`<host1>`:   First machine in URL notation, e.g. "https://remote-server.eawag.ch".   
 `<host2>`:   Second machine in URL notation [default: http://localhost:5000]
 
 ## Options:
