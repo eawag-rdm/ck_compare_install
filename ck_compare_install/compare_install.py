@@ -1,6 +1,6 @@
 # _*_ coding: utf-8 _*_
 
-"""compare_install.py
+"""compare_install
 
 Compares set of modules loaded in two CKAN instances on two different machines.
 Useful to compare deployment- with development environment. Also compares the
